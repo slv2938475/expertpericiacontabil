@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="portifoliologo.png" rel="shortcut icon" type="image/x-icon">
+    <title>Expert Perícia Contábil - Jorge Valle</title>
+</head>
+<body>
+    <!--Logo-->
+    <!--Início Menu-->
+    <fieldset>
+        <div class="modern-photo-wrapper">
+            <img src="colocarfotodefundo.jpg" alt="Fundo moderno" class="navbar-bg-modern" style="position:absolute; top:0; left:0;">
+            <style>
+            .navbar-bg-modern {
+                
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 110px;
+                object-fit: cover;
+                border-radius: 16px 16px 32px 32px;
+                opacity: 0.18;
+                pointer-events: none;
+                filter: blur(2px) brightness(1.1) saturate(1.2);
+            }
+            .navbar-custom {
+                background: gray !important;
+                color: #222 !important;
+            }
+            .navbar-custom a,
+            .navbar-custom .navbar-brand {
+                color: #222 !important;
+            }
+            .navbar-custom a:hover,
+            .navbar-custom .navbar-brand:hover {
+                color: #ff8800 !important;
+            }
+            </style>
+        </div>
+    <div class="nav-wrap navbar-custom" id="data-scroll">
+        <a class="navbar-brand logo" href="index.html" id="logo">
+        Contador Jorge Valle Expert Perícia Contábil
+    </a>
+        <ul class="navbar navbar-light bg-faded" style="list-style: none; display: inline; margin-right: 190px;" id="navbar">
+    <li style="display: inline; margin-right: 20px; text-align: center;">
+        <a href="#aboutme" class="item1">Sobre</a>
+    </li>
+    <li style="display: inline; margin-right: 20px; text-align: center;">
+        <a href="#contato" class="item2">Contato</a>
+    </li>
+    </li>
+    <li style="display: inline; margin-right: 20px; text-align: center;">
+        <a href="#counters" class="item3">Anos de Experiência</a>
+    </li>
+    <li style="display: inline; margin-right: 40px; text-align: center;">
+        <a href="#anúncio" class="item4">Home</a>
+    </li>
+    <li style="display: inline; margin-right: 20px; text-align: center;">
+        <a href="#aviso" class="item5">Aviso sobre a Manutenção</a>
+    </ul>
+    </div>
+    </fieldset>
+    <br>
+    <br>
+    <!--Home Início-->
+    <style>
+        body {
+            min-height: 100vh;
+            background: #111 !important;
+            background-attachment: fixed;
+            position: relative;
+            overflow-x: hidden;
+        }
+        body::before, body::after {
+            content: "";
+            position: fixed;
+            z-index: -1;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.18;
+            pointer-events: none;
+            transition: opacity 0.4s;
+        }
+        body::before {
+            width: 420px;
+            height: 420px;
+            left: -120px;
+            top: -80px;
+            background: radial-gradient(circle at 30% 30%, #ffb347 0%, #ff8800 80%);
+        }
+        body::after {
+            width: 320px;
+            height: 320px;
+            right: -80px;
+            bottom: -60px;
+            background: radial-gradient(circle at 70% 70%, #ffd180 0%, #ffb347 80%);
+        }
+        @media (max-width: 700px) {
+            body::before, body::after {
+                width: 160px;
+                height: 160px;
+                filter: blur(30px);
+            }
+            body::before {
+                left: -40px;
+                top: -40px;
+            }
+            body::after {
+                right: -20px;
+                bottom: -20px;
+            }
+        }
+        /* Ajuste para textos ficarem legíveis no fundo escuro */
+        body, p, h1, h2, h4, .about-t, .about-desc, .counter-label, .anúncio, .text-muted {
+            color: #f5f5f5 !important;
+        }
+        .navbar-custom {
+            background: #222 !important;
+            color: #fff !important;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+        }
+        .navbar-custom a,
+        .navbar-custom .navbar-brand {
+            color: #fff !important;
+        }
+        .navbar-custom a:hover,
+        .navbar-custom .navbar-brand:hover {
+            color: #ff8800 !important;
+        }
+        .modern-photo-wrapper .navbar-bg-modern {
+            opacity: 0.12 !important;
+        }
+        .counter-btn {
+            background: linear-gradient(90deg, #ff8800 60%, #ffb347 100%);
+            color: #fff;
+        }
+        .counter {
+            background: rgba(255,255,255,0.10);
+            color: #fff;
+        }
+        .whatsapp-btn {
+            background: linear-gradient(90deg, #25d366 60%, #128c7e 100%);
+            color: #fff;
+        }
+        .whatsapp-btn:hover {
+            background: linear-gradient(90deg, #128c7e 60%, #25d366 100%);
+            color: #fff;
+        }
+        footer {
+            color: #fff;
+            background: linear-gradient(90deg, #25d366 60%, #128c7e 100%);
+        }
+        /* Corrige cor dos links */
+        a {
+            color: #ffb347;
+        }
+        a:hover {
+            color: #fff;
+        }
+    </style>
+    <section class="main-home" id="home">
+        
+    </section>
+    <style>
+    .fade-on-scroll {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.9s cubic-bezier(.4,0,.2,1), transform 0.9s cubic-bezier(.4,0,.2,1);
+    }
+    .modern-photo {
+        max-height: 70vh;
+        width: auto;
+        max-width: 96vw;
+        object-fit: cover;
+        border-radius: 24px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+        filter: brightness(1.08) contrast(1.08) saturate(1.12);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .modern-photo:hover {
+        transform: scale(1.03) translateY(-4px);
+        box-shadow: 0 16px 48px rgba(255,136,0,0.18), 0 4px 16px rgba(0,0,0,0.10);
+    }
+    @media (max-width: 700px) {
+        .modern-photo-wrapper {
+            min-height: 32vh;
+            border-radius: 16px;
+        }
+        .modern-photo {
+            max-height: 32vh;
+            border-radius: 12px;
+        }
+    }
+    </style>
+    <!--Boas vindas da página-->
+    
+    </section>
+    <br>
+    <br>
+    <div class="row">
+        <h1 id="textH" class="textHome">Seja Bem vindo!</h1>
+    </div>
+    <section class="main-home" id="home"> 
+    <div class="anúncio"></div>
+    <div class="aboutme-flex">
+        <div class="aboutme-photo fade-on-scroll">
+            <img src="Eduardo_Macarios_270116_nex_IMG_6777-2.jpg" alt="Jorge Valle" class="modern-photo">
+        </div>
+        <div class="anúncio fade-on-scroll" style="flex: 1; margin-left: 32px;" id="anúncio">
+            <p>JÁ PENSOU EM VISITAR PERFIS E PÁGINAS DE CONTADORES PERITOS?
+            VOCÊ CHEGOU NO CAMINHO CERTO! AQUI VOCÊ ENCONTRA INFORMAÇÕES SOBRE MIM,<br> MEU TRABALHO E MINHAS REDES SOCIAIS.</p>
+        </div>
+    </div>
+    </section>
+    <style>
+    .anúncio {
+        font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+        font-size: 30px;
+        color: #333;
+        line-height: 1.6;
+        margin-top: 24px;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    </style>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Resumindo um texto sobre mim-->
+    <fieldset class="border" style="border: 2px solid #ff8800; border-radius: 16px; padding: 24px; background-color: rgba(255, 255, 255, 0.1);">
+        <h2 class="text-center fade-on-scroll" style="color: #ff8800; font-weight: bold; animation: fadeUp 1s ease-out 0.2s forwards;">Sobre Mim</h2>
+        <p class="text-muted fade-on-scroll" style="animation: fadeUp 1s ease-out 0.4s forwards;">Olá, meu nome é Jorge Valle, sou contador e perito contábil com mais de 20 anos de experiência na área. Minha paixão pela contabilidade começou cedo e desde então tenho me dedicado a ajudar empresas e indivíduos a resolverem suas questões financeiras com precisão e ética.</p>
+    <section class="section" id="aboutme"></section>
+        <div class="container">
+            <div class="textcenter fade-on-scroll" style="animation: fadeUp 2s ease-out 1s forwards;">
+                <h2 class="section-title">SOBRE MIM RESUMIDAMENTE</h2>
+            </div>
+        </div>
+                <div class="aboutme-flex">
+                    <div class="aboutme-text">
+                        <p class="text-muted about-t">O início da minha jornada</p>
+                        <h4><b>Desde que eu comecei a trabalhar com contabilidade</b></h4>
+                        <p class="text-muted about-desc">Antes de eu trabalhar com contabílidade, eu estava aprendendo sobre engenharia,<br> porque eu sempre gostava de engenharia,
+                            até que teve uma prova que eu fiz que no resultado<br>eu não passei, 
+                            com o incentivo da minha mãe, me tornei contador com 15 anos em 1995. Depois<br>eu comecei a fazer a faculdade
+                            e terminei em 2005, e consegui realmente<br>me tornar um contador profissional
+                        </p>
+                    </div>
+                    <div class="aboutme-photo fade-on-scroll">
+                        <img src="fotosobre.png" alt="Foto sobre mim" style="border-radius: 41px; height: 211px; width: 211px; display: block;">
+                    </div>
+                </div>
+            </fieldset>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="social-links fade-on-scroll">
+                    <h1>Você pode me encontrar nas redes sociais</h1>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/expertpericiacontabil/" target="_blank" class="social-icon">
+                            <img src="instagramimagem.jpg" alt="Instagram" style="width: 120px; height: 120px;">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jorge-valle-a13b7417?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon">
+                            <img src="linkedinlogo.png" alt="LinkedIn" style="width: 70px; height: 70px;">
+                        </a>
+                    </div>
+                </div>
+                <style>
+                .aboutme-flex {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 32px;
+                    margin-top: 24px;
+                    flex-wrap: wrap;
+                }
+                .aboutme-text {
+                    flex: 1 1 320px;
+                    min-width: 220px;
+                }
+                .aboutme-photo {
+                    flex: 0 0 auto;
+                    min-width: 211px;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+                @media (max-width: 700px) {
+                    .aboutme-flex {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 18px;
+                    }
+                    .aboutme-photo {
+                        justify-content: center;
+                        margin-top: 12px;
+                    }
+                }
+                .social-links {
+                    text-align: center;
+                    margin-top: 32px;
+                }
+                .fade-on-scroll {
+                    opacity: 0;
+                    transform: translateY(40px);
+                    transition: opacity 0.9s cubic-bezier(.4,0,.2,1), transform 0.9s cubic-bezier(.4,0,.2,1);
+                }
+                .fade-on-scroll.visible {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                </style>
+                <script>
+                function handleFadeOnScroll() {
+                    document.querySelectorAll('.fade-on-scroll').forEach(el => {
+                        const rect = el.getBoundingClientRect();
+                        if (rect.top < window.innerHeight - 60) {
+                            el.classList.add('visible');
+                        }
+                    });
+                }
+                window.addEventListener('scroll', handleFadeOnScroll);
+                window.addEventListener('DOMContentLoaded', handleFadeOnScroll);
+                </script>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <div class="counters-section-modern" id="counters">
+            <div class="counter-btn">
+                <span class="counter" data-counter="30">0</span>+
+                <span class="counter-label">Trabalhando com Contabilidade</span>
+            </div>
+            <div class="counter-btn">
+                <span class="counter" data-counter="20">0</span>+
+                <span class="counter-label">Anos sendo Contador</span>
+            </div>
+        </div>
+        <div class="counters-section-modern">
+            <div class="counter-btn">
+                <span class="counter" data-counter="2">0</span>+
+                <span class="counter-label">Anos de experiência em perícia contábil</span>
+            </div>
+        </div>
+
+        </div>
+        <script>
+        let countersStarted = false;
+        function animateCounters() {
+            document.querySelectorAll('.counter').forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-counter');
+                    const count = +counter.innerText;
+                    const increment = Math.ceil(target / 60);
+                    if (count < target) {
+                        counter.innerText = count + increment > target ? target : count + increment;
+                        setTimeout(updateCount, 30);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                counter.innerText = '0';
+                updateCount();
+            });
+        }
+        function isCountersSectionInView() {
+            const section = document.querySelector('.counters-section-modern');
+            const rect = section.getBoundingClientRect();
+            return rect.top < window.innerHeight && rect.bottom > 0;
+        }
+        function handleScroll() {
+            if (isCountersSectionInView()) {
+                if (!countersStarted) {
+                    animateCounters();
+                    countersStarted = true;
+                }
+            } else {
+                countersStarted = false;
+                document.querySelectorAll('.counter').forEach(c => c.innerText = '0');
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+        </script>
+        <style>
+        .counters-section-modern {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+        .counter-btn {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(90deg, #ff8800 60%, #ffb347 100%);
+            color: #fff;
+            border-radius: 32px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+            padding: 18px 32px;
+            font-size: 1.3rem;
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+            font-weight: 600;
+            transition: box-shadow 0.2s, transform 0.2s;
+            cursor: pointer;
+            border: none;
+            min-width: 280px;
+        }
+        .counter-btn:hover {
+            box-shadow: 0 8px 24px rgba(255,136,0,0.18);
+            transform: translateY(-2px) scale(1.03);
+        }
+        .counter {
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-right: 10px;
+            color: #fff;
+            background: rgba(255,255,255,0.12);
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .counter-label {
+            font-size: 1.1rem;
+            margin-left: 12px;
+            color: #fff;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            text-align: left;
+        }
+        @media (max-width: 700px) {
+            .counters-section-modern {
+                flex-direction: column;
+                align-items: center;
+                gap: 18px;
+            }
+            .counter-btn {
+                min-width: 180px;
+                padding: 14px 18px;
+                font-size: 1rem;
+            }
+            .counter {
+                width: 36px;
+                height: 36px;
+                font-size: 1.3rem;
+            }
+        }
+        </style>
+     <script src="app.js">
+     </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
+     </script>
+</body>
+<style>
+li {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+span.counter {
+    font-weight: bold;
+    text-align:start;
+}
+h5 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.navbar-custom {
+    padding: 15px 0px;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 999;
+    margin-bottom: 0px;
+    position: fixed; /* Fazer com que o navbar fique fixo no topo */
+
+}
+.navbar-custom {
+    background: #ff8800;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.navbar-custom a,
+.navbar-custom .navbar-brand {
+    color: #fff !important;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.navbar-custom a:hover,
+.navbar-custom .navbar-brand:hover {
+    color: #222 !important;
+    text-decoration: none;
+}
+
+.navbar-custom ul {
+    background: transparent;
+    border: none;
+}
+
+.navbar-custom li {
+    border-radius: 8px;
+    padding: 6px 12px;
+    transition: background 0.2s;
+}
+
+.navbar-custom li:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+/* Modernize sans-serif text */
+body, p, h2, h4, .about-t, .about-desc {
+    font-family: 'Segoe UI', 'Roboto', Arial, 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.01em;
+    color: #222;
+}
+
+/* Section aboutme animation */
+#aboutme .container, #aboutme .row, #aboutme .col-nd-4 {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s ease-out 0.2s forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #fff6e6 0%, #ffe0b2 40%, #ffd180 100%);
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Efeito de shapes modernos no fundo */
+body::before, body::after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.25;
+    pointer-events: none;
+    transition: opacity 0.4s;
+}
+body::before {
+    width: 520px;
+    height: 520px;
+    left: -180px;
+    top: -120px;
+    background: radial-gradient(circle at 30% 30%, #ffb347 0%, #ff8800 80%);
+}
+body::after {
+    width: 420px;
+    height: 420px;
+    right: -140px;
+    bottom: -100px;
+    background: radial-gradient(circle at 70% 70%, #ffd180 0%, #ffb347 80%);
+}
+
+@media (max-width: 700px) {
+    body::before, body::after {
+        width: 220px;
+        height: 220px;
+        filter: blur(30px);
+    }
+    body::before {
+        left: -60px;
+        top: -60px;
+    }
+    body::after {
+        right: -40px;
+        bottom: -40px;
+    }
+}
+</style>
+<div class="contato" id="contato">
+<b class="contato">
+    <h1 class="fade-on-scroll" style="text-transform: uppercase; text-align: center; animation: fadeUp 1s ease-out 2s forwards">Você pode falar comigo pelo Whatsapp</h1>
+    <p class="número, fade-on-scroll" style="text-align: center; animation: fadeUp 1s ease-out 2s forwards">+55 22 99986-0316</p>
+    <a href="https://api.whatsapp.com/send/?phone=5522999860316&text&type=phone_number&app_absent=0" class="whatsapp-btn">Clique aqui</a>
+    </div>
+    <style>
+    .whatsapp-btn {
+        display: inline-block;
+        font-size: 31px;
+        padding: 14px 38px;
+        background: linear-gradient(90deg, #25d366 60%, #128c7e 100%);
+        color: #fff;
+        border: none;
+        border-radius: 32px;
+        font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+        font-weight: 600;
+        box-shadow: 0 4px 16px rgba(37,211,102,0.15);
+        cursor: pointer;
+        text-decoration: none;
+        transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        animation: fadeUp 1s ease-out 2s forwards
+    }
+    .whatsapp-btn:hover {
+        background: linear-gradient(90deg, #128c7e 60%, #25d366 100%);
+        box-shadow: 0 8px 32px rgba(18,140,126,0.18);
+        transform: translateY(-2px) scale(1.04);
+        color: #fff;
+        text-decoration: none;
+        animation: fadeUp 1s ease-out 2s forwards;
+        filter: brightness(1.08) contrast(1.08) saturate(1.12);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    </style>
+</b>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<fieldset class="border aviso-modern" style="border: 2px solid #ff8800; border-radius: 20px; padding: 32px 24px; background: rgba(255,255,255,0.10); box-shadow: 0 4px 24px rgba(255,136,0,0.10); margin: 0 auto; max-width: 700px;">
+    <div class="aviso" id="aviso">
+        <h1 class="fade-on-scroll" style="text-transform: uppercase; text-align: center; animation: fadeUp 1s ease-out 2s forwards; color: #ff8800; font-weight: bold; letter-spacing: 0.04em;">Aviso sobre a Manutenção</h1>
+        <p class="fade-on-scroll" style="text-align: center; animation: fadeUp 1s ease-out 2s forwards; font-size: 1.2rem; color: #fff; margin-top: 18px;">
+            O site está em manutenção.
+        </p>
+        <p class="fade-on-scroll" style="text-align: center; animation: fadeUp 1s ease-out 2s forwards; font-size: 1.1rem; color: #fff;">
+            Estamos consertando algumas coisas no portfólio, pois no celular não está muito bem montado.
+        </p>
+        <div class="notificação"></div>
+    </div>
+</fieldset>
+<style>
+.aviso-modern {
+    border: 2px solid #ff8800 !important;
+    border-radius: 20px !important;
+    background: rgba(255, 255, 255, 0.10) !important;
+    box-shadow: 0 4px 24px rgba(255,136,0,0.13) !important;
+    padding: 32px 24px !important;
+    margin: 0 auto 32px auto !important;
+    max-width: 700px;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+.aviso-modern:hover {
+    box-shadow: 0 8px 32px rgba(255,136,0,0.18) !important;
+    border-color: #ffb347 !important;
+}
+@media (max-width: 700px) {
+    .aviso-modern {
+        padding: 18px 8px !important;
+        max-width: 98vw;
+    }
+}
+</style>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h6 class="fade-on-scroll" style="text-align: center; color: white; font-size: 22px; animation: fadeUp 1s 2s">
+        Postagens recentes
+    </h6>
+    <fieldset class="bordernotification" style="border: 2px solid #ff8800; border-radius: 16px; padding: 24px; background-color: rgba(255, 255, 255, 0.1); animation: fadeInScale 1.2s cubic-bezier(.4,0,.2,1) 0.2s both;">
+        <h2 class="text-center fade-on-scroll" style="color: #ff8800; font-weight: bold; animation: fadeUp 1s ease-out 0.2s forwards;">Notificação recente</h2>
+        <p class="text-muted fade-on-scroll" style="animation: fadeUp 1s ease-out 0.4s forwards;">Confira as últimas atualizações e novidades do nosso site!</p>
+        <a href="https://www.instagram.com/p/DKM5RySgfX5/?img_index=1" target="_blank">
+        <img src="noticiarecente.png" alt="Notificação recente" style="display: block; margin: 0 auto; width: 100%; max-width: 600px; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); animation: fadeInImage 1.2s cubic-bezier(.4,0,.2,1) 0.6s both;">
+        </a>
+        <a href="https://www.instagram.com/p/DKM5RySgfX5/?img_index=1" target="_blank" class="modern-btn fade-on-scroll" style="display: block; width: 100%; max-width: 220px; margin: 32px auto 24px auto; text-align: center; border-radius: 16px; font-weight: bold; animation: fadeUp 1s ease-out 1s forwards; box-shadow: 0 6px 24px rgba(255,136,0,0.13); text-decoration: none;">
+            <span style="display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 1.2rem; padding: 16px 0;">
+                <svg width="24" height="24" fill="none" style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="8" fill="#fff" opacity="0.13"/><path d="M12 7v7m0 0 3-3m-3 3-3-3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Ver Notificação
+            </span>
+        </a>
+        <style>
+        .modern-btn {
+            background: linear-gradient(90deg, #ff8800 60%, #ffb347 100%);
+            color: #fff !important;
+            border: none;
+            font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+            font-size: 1.15rem;
+            letter-spacing: 0.03em;
+            transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+            cursor: pointer;
+            box-shadow: 0 6px 24px rgba(255,136,0,0.13);
+            outline: none;
+            position: relative;
+            overflow: hidden;
+        }
+        .modern-btn:hover, .modern-btn:focus {
+            background: linear-gradient(90deg, #ffb347 60%, #ff8800 100%);
+            color: #222 !important;
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 12px 32px rgba(255,136,0,0.18);
+            text-decoration: none;
+        }
+        .modern-btn svg {
+            filter: drop-shadow(0 2px 8px rgba(255,136,0,0.12));
+        }
+        </style>
+        <p class="fade-on-scroll" style="text-align: center; color: white; animation: fadeUp 1s 2s">
+            Confira as últimas atualizações e novidades do nosso site! <br>
+            Caso não consiga clicar no link, clique com o botão do meio do seu mouse
+        </p>
+    </fieldset>
+<!--A parte onde fica em baixo do site-->
+<footer class="anoatualização" id="footer">2025 Site da Designep, 2025 Expert Perícia Contábil, 2025 Jorge Valle Contador Perito<br>
+        Este site também é do Expert Perícia Contábil</footer>
+<style>
+    footer {
+        font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        background-size: 41px;
+        border-radius: 41px;
+        background-color: green;
+        padding: 24px 0;
+        margin-top: 48px;
+        box-shadow: 0 0 32px rgba(0,0,0,0.08);
+        letter-spacing: 0.03em;
+        background: linear-gradient(90deg, #2593d3 60%, #d8c972 100%);
+        border: none;
+    }
+</style>
+</div>
+
+    <style>
+    @keyframes fadeInScale {
+        0% {
+            opacity: 0;
+            transform: scale(0.95) translateY(40px);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    }
+    @keyframes fadeInImage {
+        0% {
+            opacity: 0;
+            transform: scale(0.92) translateY(30px);
+            filter: blur(8px);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+            filter: blur(0);
+        }
+    }
+    </style>
+</div>
+</html>
